@@ -96,11 +96,14 @@ export default function Home() {
 
             <div className="relative">
               <div className="relative z-10">
-                {/* <img
-                  src="/placeholder.svg?height=600&width=600"
+                <Image
+                  src="/images/growth.jpg"
+                  width={525}
+                  height={305}
                   alt="Professional Training Environment"
-                  className="rounded-3xl shadow-2xl border border-slate-800/50"
-                /> */}
+                  className="rounded-2xl sm:rounded-3xl"
+                />
+
                 {/* Floating Cards */}
                 <div className="absolute -top-6 -left-6 bg-slate-900/90 backdrop-blur-xl p-4 rounded-2xl shadow-xl border border-sky-400/20">
                   <div className="flex items-center space-x-3">
