@@ -6,7 +6,7 @@ export default function Testimonials() {
     <section className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-slate-900" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="text-center space-y-6 mb-16">
+        <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-16">
           <h2 className="text-4xl font-bold sm:text-5xl">
             <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
               Success Stories
