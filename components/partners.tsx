@@ -1,6 +1,34 @@
 import { Card, CardContent } from './ui/card';
 import Image from 'next/image';
 
+const partners = [
+  {
+    img: '/images/nibaf.jpeg',
+    title: 'NIBAF',
+    description: 'National Institute of Banking & Finance',
+  },
+  {
+    img: '/images/hashoo.png',
+    title: 'Hashoo Hunar',
+    description: 'Skills Development Partner',
+  },
+  {
+    img: '/images/nutech.png',
+    title: 'NUTECH University',
+    description: 'Academic Excellence Partner',
+  },
+  {
+    img: '/images/pathways.png',
+    title: 'TechCorp Solutions',
+    description: 'Technology Innovation Partner',
+  },
+  {
+    img: '/images/pathways.png',
+    title: 'Global Dynamics',
+    description: 'International Training Partner',
+  },
+];
+
 export default function Partners() {
   return (
     <section className="py-20 relative">
@@ -17,58 +45,24 @@ export default function Partners() {
         {/* Auto-scrolling horizontal */}
         <div className="flex flex-row relative group [--gap:2rem] [gap:var(--gap)] [--duration:28s] overflow-hidden hide-scrollbar cursor-pointer">
           <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee group-hover:animation-paused pt-1">
-            <PartnerCard
-              img="/images/pathways.png"
-              title="NIBAF"
-              description="National Institute of Banking & Finance"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="Hashoo Hunar"
-              description="Skills Development Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="NUTECH University"
-              description="Academic Excellence Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="TechCorp Solutions"
-              description="Technology Innovation Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="Global Dynamics"
-              description="International Training Partner"
-            />
+            {partners.map(el => (
+              <PartnerCard
+                img={el.img}
+                key={el.title}
+                title={el.title}
+                description={el.description}
+              />
+            ))}
           </div>
           <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee group-hover:animation-paused pt-1">
-            <PartnerCard
-              img="/images/pathways.png"
-              title="NIBAF"
-              description="National Institute of Banking & Finance"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="Hashoo Hunar"
-              description="Skills Development Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="NUTECH University"
-              description="Academic Excellence Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="TechCorp Solutions"
-              description="Technology Innovation Partner"
-            />
-            <PartnerCard
-              img="/images/pathways.png"
-              title="Global Dynamics"
-              description="International Training Partner"
-            />
+            {partners.map(el => (
+              <PartnerCard
+                img={el.img}
+                key={el.title}
+                title={el.title}
+                description={el.description}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -85,7 +79,7 @@ const PartnerCard = ({ img, title, description }: { img: string; title: string; 
           height={64}
           src={img}
           alt={title}
-          className="mx-auto mb-4 w-16 h-16"
+          className="mx-auto mb-4 w-20 h-20 rounded-xl"
         />
 
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
