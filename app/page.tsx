@@ -9,6 +9,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Contact from '@/components/contact';
 import Testimonials from '@/components/testimonials';
+import Link from 'next/link';
+import Partners from '@/components/partners';
 
 export default function Home() {
   return (
@@ -56,18 +58,14 @@ export default function Home() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  asChild
                   size="lg"
-                  className="bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 text-white border-0 shadow-xl hover:shadow-sky-500/25 transition-all duration-300 group"
+                  className="bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 text-white text-base border-0 shadow-xl hover:shadow-sky-500/25 transition-all duration-300 group"
                 >
-                  Start Your Journey
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-sky-400/30 text-sky-400 hover:bg-sky-400 hover:border-sky-400 transition-all duration-300 hover:text-white"
-                >
-                  Explore Programs
+                  <Link href={'/#contact'}>
+                    Start Your Journey
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </div>
 
@@ -243,76 +241,7 @@ export default function Home() {
       </section>
 
       {/* Trusted Partners (Scroller) */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-slate-900" />
-        <div className="container mx-auto relative z-10">
-          <div className="text-center space-y-6 mb-8 sm:mb-16">
-            <h2 className="text-4xl font-bold sm:text-5xl">
-              <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
-                Trusted by the Best
-              </span>
-            </h2>
-          </div>
-
-          {/* Auto-scrolling horizontal */}
-          <div className="flex flex-row relative group [--gap:2rem] [gap:var(--gap)] [--duration:28s] overflow-hidden hide-scrollbar cursor-pointer">
-            <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee group-hover:animation-paused pt-1">
-              <PartnerCard
-                img="/images/pathways.png"
-                title="NIBAF"
-                description="National Institute of Banking & Finance"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="Hashoo Hunar"
-                description="Skills Development Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="NUTECH University"
-                description="Academic Excellence Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="TechCorp Solutions"
-                description="Technology Innovation Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="Global Dynamics"
-                description="International Training Partner"
-              />
-            </div>
-            <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee group-hover:animation-paused pt-1">
-              <PartnerCard
-                img="/images/pathways.png"
-                title="NIBAF"
-                description="National Institute of Banking & Finance"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="Hashoo Hunar"
-                description="Skills Development Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="NUTECH University"
-                description="Academic Excellence Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="TechCorp Solutions"
-                description="Technology Innovation Partner"
-              />
-              <PartnerCard
-                img="/images/pathways.png"
-                title="Global Dynamics"
-                description="International Training Partner"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Partners />
 
       {/* About & Global Learning Partners */}
       <section className="py-20 relative">
@@ -364,47 +293,72 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-sky-400/20 hover:border-sky-400/40 transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-sky-400 rounded-full" />
-                      <span className="text-slate-200 font-medium">CompTIA Certifications</span>
-                    </div>
+                  <CardContent>
+                    <Link
+                      href="https://www.comptia.org/en-us/certifications/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-sky-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">CompTIA Certifications</span>
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-emerald-400/20 hover:border-emerald-400/40 transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full" />
-                      <span className="text-slate-200 font-medium">EC-Council Training</span>
-                    </div>
+                  <CardContent>
+                    <Link
+                      href="https://iclass.eccouncil.org/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">EC-Council</span>
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-purple-400/20 hover:border-purple-400/40 transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full" />
-                      <span className="text-slate-200 font-medium">EC-Council University</span>
-                    </div>
+                  <CardContent>
+                    <Link
+                      href="https://www.eccu.edu/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">EC-Council University</span>
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-orange-400/20 hover:border-orange-400/40 transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full" />
-                      <span className="text-slate-200 font-medium">SHINGO – Operational Excellence</span>
-                    </div>
+                  <CardContent>
+                    <Link
+                      href="https://manufacturinginstitute.co.uk/shingo"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">SHINGO – Operational Excellence</span>
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-green-400/20 hover:border-green-400/40 transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-green-400 rounded-full" />
-                      <span className="text-slate-200 font-medium">UN Climate Change Learning</span>
-                    </div>
+                  <CardContent>
+                    <Link
+                      href="https://unccelearn.org/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-green-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">UN Climate Change Learning</span>
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
@@ -421,22 +375,3 @@ export default function Home() {
     </div>
   );
 }
-
-const PartnerCard = ({ img, title, description }: { img: string; title: string; description: string }) => {
-  return (
-    <Card className="bg-slate-900/50 backdrop-blur-xl border-slate-700 hover:border-slate-500 transition-all duration-300 text-center w-68 sm:!w-80 snap-center flex-shrink-0">
-      <CardContent className="p-2 sm:p-6">
-        <Image
-          width={64}
-          height={64}
-          src={img}
-          alt={title}
-          className="mx-auto mb-4 w-16 h-16"
-        />
-
-        <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-        <p className="text-slate-400">{description}</p>
-      </CardContent>
-    </Card>
-  );
-};

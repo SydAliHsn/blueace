@@ -1,12 +1,16 @@
 import { Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="py-16 bg-slate-950 border-t border-slate-800/50">
+    <footer className="pt-16 pb-8 bg-slate-950 border-t border-slate-800/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="space-y-4">
+          <Link
+            href={'/'}
+            className="space-y-4"
+          >
             <Image
               alt="blueace-logo"
               width={286}
@@ -18,7 +22,7 @@ export default function Footer() {
             <p className="text-slate-400">
               Your trusted Training Service Provider for Cybersecurity, IT, Environment, and HR domains.
             </p>
-          </div>
+          </Link>
 
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Training Domains</h4>
