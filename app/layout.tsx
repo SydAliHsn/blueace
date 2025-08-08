@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'BlueAce | Ace You Career',
+  title: 'BlueAce | Ace Your Career!',
   description:
     'BlueAce is an all-around Training Service Provider (TSP) that delivers hands-on understanding of diverse Cyber and Information Technology domain, Environment, and HR.',
 };
