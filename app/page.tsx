@@ -99,13 +99,13 @@ export default function Home() {
                   width={525}
                   height={305}
                   alt="Professional Training Environment"
-                  className="rounded-2xl sm:rounded-3xl"
+                  className="rounded-2xl w-full 2xl:scale-85 sm:rounded-3xl mx-auto"
                 />
 
                 {/* Floating Cards */}
-                <div className="absolute -top-6 -left-6 bg-slate-900/90 backdrop-blur-xl p-4 rounded-2xl shadow-xl border border-sky-400/20">
+                <div className="absolute -top-6 -left-6 bg-slate-900/90 backdrop-blur-xl p-2 sm:p-4 rounded-2xl shadow-xl border border-sky-400/20">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-blue-500 rounded-xl flex items-center justify-center">
+                    <div className="size-10 sm:size-12 bg-gradient-to-br from-sky-400 to-blue-500 rounded-xl flex items-center justify-center">
                       <Shield className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -115,9 +115,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="absolute -bottom-6 -right-6 bg-slate-900/90 backdrop-blur-xl p-4 rounded-2xl shadow-xl border border-emerald-400/20">
+                <div className="absolute -bottom-6 -right-6 bg-slate-900/90 backdrop-blur-xl p-2 sm:p-4 rounded-2xl shadow-xl border border-emerald-400/20">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-500 rounded-xl flex items-center justify-center">
+                    <div className="size-10 sm:size-12 bg-gradient-to-br from-emerald-400 to-green-500 rounded-xl flex items-center justify-center">
                       <TrendingUp className="w-6 h-6 text-white" />
                     </div>
                     <div>
