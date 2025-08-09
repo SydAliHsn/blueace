@@ -34,13 +34,6 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-8">
-              <Badge
-                variant="outline"
-                className="w-fit border-sky-400/30 bg-sky-400/10 text-sky-400 hover:bg-sky-400/20 transition-colors"
-              >
-                <Award className="w-4 h-4 mr-2" />
-                Training Service Provider (TSP)
-              </Badge>
               <div className="space-y-6">
                 <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
                   <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-sky-400 bg-clip-text text-transparent">
@@ -66,6 +59,13 @@ export default function Home() {
                     Start Your Journey
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  className="text-sky-500 text-base shadow-xl shadow-sky-500/25 transition-all duration-300 border border-sky-400"
+                >
+                  <Link href={'/#about'}>About BlueAce</Link>
                 </Button>
               </div>
 
@@ -244,7 +244,10 @@ export default function Home() {
       <Partners />
 
       {/* About & Global Learning Partners */}
-      <section className="py-20 relative">
+      <section
+        className="py-20 relative"
+        id="about"
+      >
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-950" />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-16 lg:grid-cols-2">
