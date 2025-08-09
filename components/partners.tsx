@@ -18,13 +18,13 @@ const partners = [
     description: 'Academic Excellence Partner',
   },
   {
-    img: '/images/pathways.png',
-    title: 'TechCorp Solutions',
-    description: 'Technology Innovation Partner',
+    img: '/images/ec-council.png',
+    title: 'EC Council',
+    description: 'Cybersecurity Training Partner',
   },
   {
-    img: '/images/pathways.png',
-    title: 'Global Dynamics',
+    img: '/images/comptia-white.jpg',
+    title: 'CompTIA',
     description: 'International Training Partner',
   },
 ];
@@ -43,7 +43,7 @@ export default function Partners() {
         </div>
 
         {/* Auto-scrolling horizontal */}
-        <div className="flex flex-row relative group [--gap:2rem] [gap:var(--gap)] [--duration:28s] overflow-hidden hide-scrollbar cursor-pointer">
+        <div className="flex flex-row relative group [--gap:2rem] [gap:var(--gap)] [--duration:20s] overflow-hidden hide-scrollbar cursor-pointer">
           <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee group-hover:animation-paused pt-1">
             {partners.map(el => (
               <PartnerCard
@@ -72,7 +72,7 @@ export default function Partners() {
 
 const PartnerCard = ({ img, title, description }: { img: string; title: string; description: string }) => {
   return (
-    <Card className="bg-slate-900/50 backdrop-blur-xl border-slate-700 hover:border-slate-500 transition-all duration-300 text-center w-68 sm:!w-80 snap-center flex-shrink-0">
+    <Card className="bg-slate-900/50 backdrop-blur-xl border-slate-700 hover:border-slate-500 transition-all duration-300 text-center w-68 sm:!w-80 flex-shrink-0">
       <CardContent className="p-2 sm:p-6">
         <Image
           width={64}
