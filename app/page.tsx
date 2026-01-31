@@ -32,16 +32,16 @@ export default function Home() {
         {/* End of Floating Elements */}
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap- items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+                <h1 className="text-4xl font-bold tracking-tight scale-[1.07] sm:text-6xl md:scale-110 md:translate-x-7 translate-x-2">
                   <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-sky-400 bg-clip-text text-transparent">
                     ACE
                   </span>
                   <span className="bg-gradient-to-r from-white via-sky-200 to-white bg-clip-text text-transparent">
                     {' '}
-                    your Career!
+                    your Business!
                   </span>
                 </h1>
                 <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
