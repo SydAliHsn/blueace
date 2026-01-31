@@ -20,13 +20,10 @@ export default function Contact() {
             <div className="space-y-4">
               <h2 className="text-4xl font-bold sm:text-5xl">
                 <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
-                  Ready to ACE Your Career?
+                  Ready to ACE Your Business?
                 </span>
               </h2>
-              <p className="text-xl text-slate-300">
-                Connect with our expert trainers and start your journey to professional excellence across multiple
-                domains.
-              </p>
+              <p className="text-xl text-slate-300">Connect with our experts and start your journey to excellence!</p>
             </div>
 
             <div className="space-y-6">
@@ -67,9 +64,9 @@ export default function Contact() {
           ) : (
             <Card className="bg-slate-900/50 backdrop-blur-xl border-sky-400/20 hover:border-sky-400/40 transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-2xl text-white">Start Your Training Journey</CardTitle>
+                <CardTitle className="text-2xl text-white">Start Your Journey</CardTitle>
                 <CardDescription className="text-slate-300">
-                  Get personalized guidance from our training experts within 24 hours.
+                  Get personalized guidance from our experts within 24 hours!
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -220,7 +217,7 @@ function ContactSuccess() {
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Thank You!</h2>
             <p className="text-lg sm:text-xl text-slate-300">
               Your message has been sent successfully. Our training experts will get back to you within 24 hours to help
-              you ACE your career!
+              you ACE your business!
             </p>
           </CardContent>
         </Card>

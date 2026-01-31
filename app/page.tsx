@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-12 overflow-hidden">
+      <section className="relative py-12 lg:py-20 overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.1),transparent_50%)]" />
@@ -45,8 +45,8 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-                  BlueAce is your trusted Training Service Provider, delivering hands-on understanding of diverse Cyber
-                  Security, Information Technology, Environment, and HR domains through innovative learning experiences.
+                  BlueAce is your trusted technology provider, delivering diverse solutions in AI, Cyber Security,
+                  Information Technology, Environment, and HR domains that ensure increasing your ROI.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 pt-8">
+              {/* <div className="grid grid-cols-3 gap-8 pt-8">
                 <div className="text-center space-y-2">
                   <div className="text-3xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
                     500+
@@ -89,7 +89,7 @@ export default function Home() {
                   </div>
                   <div className="text-sm text-slate-400">Lab Access</div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="relative">
@@ -109,8 +109,8 @@ export default function Home() {
                       <Shield className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Multi-Domain TSP</div>
-                      <div className="text-sm text-sky-400">Cyber • IT • HR</div>
+                      <div className="font-semibold text-white">Multi-Domain Tech Partner</div>
+                      <div className="text-sm text-sky-400">AI • IT • Cyber</div>
                     </div>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Home() {
                       <TrendingUp className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Career Growth</div>
+                      <div className="font-semibold text-white">Business Growth</div>
                       <div className="text-sm text-emerald-400">Guaranteed</div>
                     </div>
                   </div>
@@ -150,10 +150,14 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
+                <p className="text-slate-300 leading-relaxed italic mb-0.5">
+                  “Technology should empower, not complicate.”
+                </p>
+
                 <p className="text-slate-300 leading-relaxed">
-                  Our mission is to empower individuals and organizations through high-quality, practical, and impactful
-                  training solutions. We are committed to nurturing talent, enhancing skills, and unlocking potential by
-                  delivering innovative learning experiences that inspire growth, adaptability, and long-term success.
+                  Our mission is to enable organizations through high-quality, and impactful solutions. We are committed
+                  to unlocking potential by delivering innovative solutions that inspire growth, adaptability, and
+                  long-term success.
                 </p>
               </CardContent>
             </Card>
@@ -169,9 +173,9 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300 leading-relaxed">
-                  To be a leading training service provider recognized for transforming lives and shaping future-ready
-                  professionals. We envision a world where every learner has the tools, confidence, and competence to
-                  thrive in a constantly evolving global landscape.
+                  To be a leading technology company for transforming lives and shaping future-ready organizations. We
+                  envision a world where every business has the tools, and competence to thrive in a constantly evolving
+                  global landscape.
                 </p>
               </CardContent>
             </Card>
@@ -180,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 relative">
+      {/* <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-950" />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center space-y-6 mb-16">
@@ -238,7 +242,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trusted Partners (Scroller) */}
       <Partners />
@@ -260,13 +264,15 @@ export default function Home() {
               </h2>
               <div className="space-y-6">
                 <p className="text-xl text-slate-300 leading-relaxed">
-                  BlueAce is an all-around Training Service Provider (TSP) that delivers hands-on understanding of
-                  diverse Cyber and Information Technology domain, Environment, and HR.
+                  BlueAce is a next-gen IT Consulting, Digital Transformation and Certification Company. Our approach is
+                  human-centered, data-driven, and outcome-focused, ensuring every solution should move your business
+                  forward.
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed">
-                  Partnered with EC-Council, CompTIA and SHINGO, we are a team of dedicated professionals assisting
-                  young students and industry professionals to gain success in their career. We enable aspiring IT and
-                  Security experts to attain the highest efficacies in a fully-equipped lab environment.
+                  Our partners include DataSnipper an AI automation for audit and finance, mlean Spain, CompTIA USA, EC
+                  Council and Shingo Institute, we offer solutions that enhance ROI through agility and productivity.
+                  Our team blends strategy, engineering, and creativity to design solutions that are simple, scalable,
+                  and future-proof.
                 </p>
               </div>
 
@@ -287,14 +293,42 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Global Learning Partners */}
+            {/* Global Solution Partners */}
             <div className="space-y-8">
               <h2 className="text-4xl font-bold">
                 <span className="bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
-                  Global Learning Partners
+                  Global Solution Partners
                 </span>
               </h2>
               <div className="space-y-4">
+                <Card className="bg-slate-900/50 backdrop-blur-xl border-sky-400/20 hover:border-sky-400/40 transition-all duration-300">
+                  <CardContent>
+                    <Link
+                      href="https://www.comptia.org/en-us/certifications/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-amber-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">mlean</span>
+                      </div>
+                    </Link>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-900/50 backdrop-blur-xl border-sky-400/20 hover:border-sky-400/40 transition-all duration-300">
+                  <CardContent>
+                    <Link
+                      href="https://www.comptia.org/en-us/certifications/"
+                      target="_blank"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-red-400 rounded-full" />
+                        <span className="text-slate-200 font-medium">DataSnipper</span>
+                      </div>
+                    </Link>
+                  </CardContent>
+                </Card>
+
                 <Card className="bg-slate-900/50 backdrop-blur-xl border-sky-400/20 hover:border-sky-400/40 transition-all duration-300">
                   <CardContent>
                     <Link

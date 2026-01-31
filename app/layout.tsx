@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'BlueAce | Ace Your Career!',
+  title: 'BlueAce | Ace Your Business!',
   description:
-    'BlueAce is an all-around Training Service Provider (TSP) that delivers hands-on understanding of diverse Cyber and Information Technology domain, Environment, and HR.',
+    'BlueAce is your trusted technology provider, delivering diverse solutions in AI, Cyber Security, Information Technology, Environment, and HR domains that ensure increasing your ROI.',
 };
 
 export default function RootLayout({
@@ -24,7 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-slate-900"
+    >
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
